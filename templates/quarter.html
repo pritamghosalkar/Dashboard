@@ -1,0 +1,7 @@
+{% extends "dashboard.html" %}
+{% block content %}
+<script type="text/javascript">Bokeh.set_log_level("info");</script>
+<script type="text/javascript" src="{{ cdn_js }}" integrity="sha384-qkRvDQVAIfzsJo40iRBbxt6sttt0hv4lh74DG7OK4MCHv4C5oohXYoHUM5W11uqS" crossorigin="anonymous"></script>
+{{ script | safe }}
+{{ div | safe }}
+{% endblock %}
